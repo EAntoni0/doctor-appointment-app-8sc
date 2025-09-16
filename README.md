@@ -59,3 +59,43 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+## Pasos realizados
+
+
+lo primero que hice fue instalar un suit de herramientas para desarrollo web con PHP en este caso WAMP Server que incluye php, mysql y un servidor local
+
+1.instalar composer
+
+2.instalar laravel con el comando: global require laravel/installer
+
+3.crear un nuevo proyecto con el comando: Laravel new doctor-appointment-app-8sc
+
+4.instalar jetstream: composer requiere Laravel/Jetstream
+
+5.iniciar el servidor del proyecto con: php artisan serve
+
+6.registrarnos en la pagina con nombre, correo y contraseña
+
+7.crear la base de datos usando php my admin
+
+8.modificar el archivo .env con las nuevas configuraciones de la base de datos
+
+9.ejecutar el comando php artian migrate para migrar a la nueva base de datos
+**si todo salio bien deberiamos de ver varias tablas en la base de datos
+
+10.instalar laravel-lang para agregar nuevos idiomas: composer require laravel-lang/common
+
+11.agregar el idioma español con el comando php artisan lang:add es
+
+12.modificar el archivo .env y cambiar el parametro APP_LOCALE de "en" a "es"
+
+13.modificar el archivo app.php en la opcion 'timezone' => 'America/Merida'
+
+14.descomentar la opcion Features::profilePhotos(), en el archivo jetstream.php linea 62
+
+15.volver al archivo .env y modificar la ruta de almacenamiento en la opcion FILESYSTEM_DISK=local, cambiarlo a public
+
+16.entrar nuevamente a la aplicacion web ir al apartado de perfil y seleccionar la foto de perfil.
