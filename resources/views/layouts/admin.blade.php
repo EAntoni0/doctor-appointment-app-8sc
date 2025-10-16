@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -33,5 +34,7 @@
         @stack('modals')
 
         @livewireScripts
+        <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        <script src="https://kit.fontawesome.com/b579ed6425.js" crossorigin="anonymous"></script>
     </body>
 </html>
