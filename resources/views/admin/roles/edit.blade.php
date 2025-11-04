@@ -1,14 +1,17 @@
 <x-admin-layout :breadcrumbs="[
     [
         'name' => 'Dashboard',
-        'href' => route('admin.dashboard')
+        'href' => route('admin.dashboard'),
     ],
     [
         'name' => 'Roles',
-        'href' => route('admin.rolex.index')
+        'href' => route('admin.roles.index'),
     ],
     [
-        'name' => 'Editar'
+        'name' => 'Editar',
+
     ],
 ]">
+
+
 </x-admin-layout>

@@ -31,6 +31,7 @@
 <!--Añadir margen superior -->
    <div class="mt-14 flex items-center justify-between w-full">
       @include('layouts.includes.admin.breadcrumb')
+      {{ $action ?? '' }}
    </div>
 
    {{ $slot }}

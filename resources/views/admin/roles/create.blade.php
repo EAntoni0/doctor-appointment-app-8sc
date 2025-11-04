@@ -5,7 +5,7 @@
     ],
     [
         'name' => 'Roles',
-        'href' => route('admin.rolex.index')
+        'href' => route('admin.roles.index')
     ],
     [
         'name' => 'Nuevo'
